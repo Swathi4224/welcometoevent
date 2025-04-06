@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select Decor - Eventify</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Select Your Event Decoration </h1>
+    </header>
+
+    <section class="decor-selection">
+        <h2>Choose a Decor Theme</h2>
+        <div class="decor-options">
+            <div class="decor" onclick="selectOption(this, 'decor', 'Royal Theme', 70)">
+                <img src="images/decor1.jpg" alt="Royal Theme">
+                <p>Royal Theme - $200</p>
+            </div>
+            <div class="decor" onclick="selectOption(this, 'decor', 'Floral Theme', 70)">
+                <img src="images/decor2.jpg" alt="Floral Theme">
+                <p>Floral Theme - $150</p>
+            </div>
+            <div class="decor" onclick="selectOption(this, 'decor', 'Modern Theme', 70)">
+                <img src="images/decor 3.jpg" alt="Modern Theme">
+                <p>Modern Theme - $180</p>
+            </div>
+        </div>
+        
+    </section>
+
+    <script src="eventify_script.js"></script>
+</body>
+</html>

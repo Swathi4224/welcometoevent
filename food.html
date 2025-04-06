@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventify - Select Food</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Select Food Type</h1>
+<div class="food-options">
+    <div class="food" onclick="selectOption(this, 'food', 'Veg', 300)">
+        <img src="images/veg.jpg" alt="Vegetarian">
+        <p>Veg - $300 per person</p>
+    </div>
+    <div class="food" onclick="selectOption(this, 'food', 'Non-Veg', 500)">
+        <img src="images/nonveg.jpg" alt="Non-Vegetarian">
+        <p>Non-Veg - $500 per person</p>
+    </div>
+</div>
+
+    
+    <h2>Menu</h2>
+    <div id="menu-items"></div>
+
+    <label>Number of Guests: <input type="number" id="guestCount"></label>
+    <<button id="next-button" onclick="goToCart()">PROCEED</button>
+
+    <script src="eventify_script.js"></script>
+</body>
+</html>

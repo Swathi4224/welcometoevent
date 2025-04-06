@@ -1,0 +1,304 @@
+/* Importing Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+/* General Body Styles */
+body {
+    font-family: 'Poppins', Arial, sans-serif;
+    background-image: url('images/background1.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    color: #ffffff;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Header Section */
+header {
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+    margin: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+header h1 {
+    color: #ffcc00;
+    text-shadow: 2px 2px 4px #000;
+    font-size: 48px;
+    margin-bottom: 10px;
+    animation: fadeInDown 1s ease-in-out;
+}
+
+header p {
+    color: #ffdd55;
+    font-size: 20px;
+}
+
+/* Event Section */
+.event-selection h2 {
+    color: #ff8800;
+    text-shadow: 2px 2px 4px #000;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.event-selection {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.event-options {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.event {
+    display: inline-block;
+    flex-shrink: 0;
+    width: 250px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.event:hover {
+    transform: scale(1.05);
+}
+
+.event img {
+    width: 250px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
+}
+
+.event p {
+    color: #ffdd55;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* Footer Section */
+footer {
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+    padding: 15px;
+    margin-top: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+footer h3 {
+    color: #ffcc00;
+    text-shadow: 2px 2px 4px #000;
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+footer p {
+    color: #ffdd55;
+}
+
+/* Decor Section */
+.decor-selection h2 {
+    color: #ff8800;
+    font-weight: bold;
+}
+
+.decor-options {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.decor-options .decor {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    transition: transform 0.3s;
+    width: 250px;
+    text-align: center;
+}
+
+.decor-options .decor:hover {
+    transform: scale(1.05);
+}
+
+.decor-options img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-bottom: 2px solid #ff8800;
+    border-radius: 10px 10px 0 0;
+}
+
+.decor-options p {
+    padding: 10px;
+    margin: 0;
+    color: #ff5500;
+    font-weight: bold;
+}
+
+/* Food Section */
+.food-options {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 80px;
+}
+
+.food {
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    transition: transform 0.3s;
+    width: 300px;
+    text-align: center;
+    color: #ff8800;
+    text-shadow: 2px 2px 4px #000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    padding: 10px;
+}
+
+.food:hover {
+    transform: scale(1.05);
+}
+
+.food img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.food p {
+    padding: 10px;
+    margin: 0;
+    font-weight: bold;
+    color: #ff6600;
+}
+
+/* Confirmation Section */
+section p {
+    font-size: 1.5em;
+    color: #f40b9b;
+    margin-bottom: 30px;
+    animation: fadeIn 2s ease-in-out;
+}
+
+section a {
+    color: #eaf4f5;
+    text-decoration: none;
+    font-weight: bold;
+    background-color: rgba(0, 193, 212, 0.2);
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+section a:hover {
+    background-color: #00C1D4;
+    color: #ffffff;
+}
+
+/* Cart Details */
+
+#cart-details {
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 15px;
+    padding: 30px;
+    width: 400px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+#cart-details p {
+    line-height: 1.6;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+#cart-details h3 {
+    font-size: 24px;
+    color: #ffcc00;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#cart-details h2 {
+    text-align: center;
+    color: #ff8800;
+    margin-top: 20px;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background: #ff6600;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+    text-align: center;
+}
+
+button:hover {
+    background: #cc5200;
+    text-align: center;
+}
+
+/* Animations */
+@keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+#guestCount {
+    margin-bottom: 10px; /* Gap between input and button */
+}
+
+#next-button {
+    background-color: #87ccf7; /* Change button color */
+    color: white;
+    padding: 3px 10px; /* Smaller size */
+    border: none;
+    border-radius: 3px;
+    font-size: 12px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+#next-button:hover {
+    background-color: #87ccf7; /* Hover color */
+}
